@@ -1,0 +1,23 @@
+//
+//  PrefixHeader.pch
+//  JonLeftSlide
+//
+//  Created by Jon Fu on 2018/6/25.
+//  Copyright © 2018年 Jon Fu. All rights reserved.
+//
+
+#ifndef PrefixHeader_pch
+#define PrefixHeader_pch
+
+
+#define kScreenWidth            [[UIScreen mainScreen] bounds].size.width   //屏幕宽度
+#define kScreenHeight           [[UIScreen mainScreen] bounds].size.height  //屏幕高度
+
+#define kStatusBarHeight [[UIApplication sharedApplication] statusBarFrame].size.height              //状态栏
+#define kNavBarHeight 44.0                                                                           //导航栏
+#define kTabBarHeight ([[UIApplication sharedApplication] statusBarFrame].size.height>20?83:49)
+#define kTopHeight (kStatusBarHeight + kNavBarHeight)
+
+#import "JFSlideManager.h"
+
+#endif /* PrefixHeader_pch */
